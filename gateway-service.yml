@@ -21,3 +21,7 @@ spring:
           uri: lb://customer-person-service
           predicates:
             - Path=/api/v2/customerperson/**
+        - id: customer-enterprise-service
+          uri: lb://customer-enterprise-service
+          predicates:
+            - Path=/api/v2/customerenterprise/**
