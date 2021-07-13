@@ -13,7 +13,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: service-accountbank
-          uri: lb://service-accountbank
+        - id: product-person-service
+          uri: lb://product-person-service
           predicates:
             - Path=/api/v2/accountbank/**
+        - id: customer-person-service
+          uri: lb://customer-person-service
+          predicates:
+            - Path=/api/v2/customerperson/**
