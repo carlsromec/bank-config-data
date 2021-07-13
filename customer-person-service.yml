@@ -1,5 +1,5 @@
 server:
-  port: 9091
+  port: 9093
 
 eureka:
   client:
@@ -9,4 +9,4 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/db_product_person
+      uri: mongodb://localhost:27017/db_customer_person
