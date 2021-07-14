@@ -25,3 +25,7 @@ spring:
           uri: lb://customer-enterprise-service
           predicates:
             - Path=/api/v2/customerenterprise/**
+        - id: p2p-service
+          uri: lb://p2p-service
+          predicates:
+            - Path=/api/v2/p2p-service/**
